@@ -57,7 +57,7 @@ export function AboutSection() {
           >
             <div className="relative rounded-2xl overflow-hidden border-2 border-slate-800 shadow-2xl">
               <ImageWithFallback
-                src="src\components\image\Screenshot 2025-12-15 141258.png"
+                src="src\components\image\Screenshot.png"
                 alt="Profile"
                 className="w-full aspect-square object-cover"
               />
