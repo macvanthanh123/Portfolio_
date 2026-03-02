@@ -27,54 +27,54 @@ const PROFILE_DATA = {
 // Simple response matching system
 const getResponse = (question: string): string => {
   const lowerQuestion = question.toLowerCase();
-  
+
   // Greetings
   if (lowerQuestion.match(/^(hi|hello|hey|chào|xin chào)/)) {
-    return `Xin chào! 👋 Tôi là AI Assistant của ${PROFILE_DATA.name}. Tôi có thể giúp bạn tìm hiểu về kỹ năng, kinh nghiệm, dự án và thông tin liên hệ. Bạn muốn biết điều gì?`;
+    return `Xin chào! Tôi là AI Assistant của ${PROFILE_DATA.name}. Tôi có thể giúp bạn tìm hiểu về kỹ năng, kinh nghiệm, dự án và thông tin liên hệ. Bạn muốn biết điều gì?`;
   }
-  
+
   // Name queries
   if (lowerQuestion.match(/(tên|name|who are you|bạn là ai)/)) {
     return `Tôi là AI Assistant đại diện cho ${PROFILE_DATA.name} - ${PROFILE_DATA.role}. ${PROFILE_DATA.bio}`;
   }
-  
+
   // Skills queries
   if (lowerQuestion.match(/(skill|kỹ năng|công nghệ|technology|tech stack)/)) {
-    return `${PROFILE_DATA.name} có chuyên môn về:\n\n🤖 AI/ML: ${PROFILE_DATA.skills.slice(0, 5).join(', ')}\n💻 Deep Learning: ${PROFILE_DATA.skills.slice(5).join(', ')}\n\nVới hơn ${PROFILE_DATA.experience} trong lĩnh vực AI và Machine Learning!`;
+    return `${PROFILE_DATA.name} có chuyên môn về:\n\nAI/ML: ${PROFILE_DATA.skills.slice(0, 5).join(', ')}\nDeep Learning: ${PROFILE_DATA.skills.slice(5).join(', ')}\n\nVới hơn ${PROFILE_DATA.experience} trong lĩnh vực AI và Machine Learning!`;
   }
-  
+
   // Experience queries
   if (lowerQuestion.match(/(kinh nghiệm|experience|work|làm việc|công việc)/)) {
-    return `${PROFILE_DATA.name} có ${PROFILE_DATA.experience} với nhiều dự án thực tế về:\n\n✨ Computer Vision\n✨ Natural Language Processing\n✨ Generative AI\n✨ Deep Learning Models\n\nBạn có thể xem các dự án cụ thể ở phần Projects!`;
+    return `${PROFILE_DATA.name} có ${PROFILE_DATA.experience} với nhiều dự án thực tế về:\n\n Computer Vision\nNatural Language Processing\n Generative AI\n Deep Learning Models\n\nBạn có thể xem các dự án cụ thể ở phần Projects!`;
   }
-  
+
   // Education queries
   if (lowerQuestion.match(/(học vấn|education|degree|học|trường)/)) {
     return `Trình độ học vấn: ${PROFILE_DATA.education}\n\nChuyên sâu về Machine Learning và AI, với nền tảng vững chắc về toán học và khoa học máy tính.`;
   }
-  
+
   // Projects queries
   if (lowerQuestion.match(/(dự án|project|portfolio|work)/)) {
-    return `${PROFILE_DATA.name} đã thực hiện nhiều dự án AI/ML ấn tượng! Bạn có thể:\n\n📊 Xem các dự án chi tiết ở phần "Projects" bên dưới\n🔗 Ghé thăm GitHub để xem source code\n💼 Xem portfolio đầy đủ với demos và case studies\n\nMỗi dự án đều có ứng dụng thực tế và giải quyết vấn đề cụ thể!`;
+    return `${PROFILE_DATA.name} đã thực hiện nhiều dự án AI/ML ấn tượng! Bạn có thể:\n\nXem các dự án chi tiết ở phần "Projects" bên dưới\n Ghé thăm GitHub để xem source code\n💼 Xem portfolio đầy đủ với demos và case studies\n\nMỗi dự án đều có ứng dụng thực tế và giải quyết vấn đề cụ thể!`;
   }
-  
+
   // Interests queries
   if (lowerQuestion.match(/(sở thích|interest|passion|yêu thích)/)) {
-    return `Các lĩnh vực quan tâm:\n\n${PROFILE_DATA.interests.map(i => `🚀 ${i}`).join('\n')}\n\nLuôn cập nhật với các công nghệ AI mới nhất!`;
+    return `Các lĩnh vực quan tâm:\n\n${PROFILE_DATA.interests.map(i => `${i}`).join('\n')}\n\nLuôn cập nhật với các công nghệ AI mới nhất!`;
   }
-  
+
   // Contact queries
   if (lowerQuestion.match(/(liên hệ|contact|email|hire|tuyển dụng)/)) {
-    return `${PROFILE_DATA.contact}! 🎯\n\nBạn có thể liên hệ qua:\n📧 Email: Xem phần Contact bên dưới\n💼 LinkedIn: Tìm ở phần social links\n🐙 GitHub: Check out my repositories\n\nHãy scroll xuống phần Contact để gửi tin nhắn trực tiếp!`;
+    return `${PROFILE_DATA.contact}! \n\nBạn có thể liên hệ qua:\nmail: Xem phần Contact bên dưới\n💼 LinkedIn: Tìm ở phần social links\n🐙 GitHub: Check out my repositories\n\nHãy scroll xuống phần Contact để gửi tin nhắn trực tiếp!`;
   }
-  
+
   // AI/Tech specific queries
   if (lowerQuestion.match(/(ai|machine learning|deep learning|neural network|llm|gpt)/)) {
-    return `Tôi chuyên về AI và Machine Learning! 🤖\n\nCác lĩnh vực chính:\n• Deep Learning & Neural Networks\n• Computer Vision (CNN, Object Detection)\n• NLP & Large Language Models\n• Generative AI (GANs, Diffusion Models)\n• MLOps & Model Deployment\n\nCó câu hỏi cụ thể về công nghệ nào không?`;
+    return `Tôi chuyên về AI và Machine Learning! \n\nCác lĩnh vực chính:\n• Deep Learning & Neural Networks\n• Computer Vision (CNN, Object Detection)\n• NLP & Large Language Models\n• Generative AI (GANs, Diffusion Models)\n• MLOps & Model Deployment\n\nCó câu hỏi cụ thể về công nghệ nào không?`;
   }
-  
+
   // Default response
-  return `Cảm ơn bạn đã hỏi! 🤔\n\nTôi có thể giúp bạn về:\n• Kỹ năng và công nghệ\n• Kinh nghiệm làm việc\n• Dự án đã thực hiện\n• Học vấn và chứng chỉ\n• Thông tin liên hệ\n\nBạn muốn biết gì cụ thể hơn về ${PROFILE_DATA.name}?`;
+  return `Cảm ơn bạn đã hỏi! \n\nTôi có thể giúp bạn về:\n• Kỹ năng và công nghệ\n• Kinh nghiệm làm việc\n• Dự án đã thực hiện\n• Học vấn và chứng chỉ\n• Thông tin liên hệ\n\nBạn muốn biết gì cụ thể hơn về ${PROFILE_DATA.name}?`;
 };
 
 export function ChatBot() {
@@ -82,7 +82,7 @@ export function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: `Xin chào! 👋 Tôi là AI Assistant của ${PROFILE_DATA.name}. Hỏi tôi bất cứ điều gì về kỹ năng, kinh nghiệm, hoặc dự án nhé!`,
+      text: `Xin chào! Tôi là AI Assistant của ${PROFILE_DATA.name}. Hỏi tôi bất cứ điều gì về kỹ năng, kinh nghiệm, hoặc dự án nhé!`,
       isBot: true,
       timestamp: new Date(),
     },
@@ -195,7 +195,7 @@ export function ChatBot() {
                 </div>
                 <div className="flex-1">
                   <h3 className="flex items-center gap-2">
-                    AI Assistant
+                    Trợ lý AI
                     <Sparkles className="w-4 h-4 text-cyan-400" />
                   </h3>
                   <p className="text-xs text-slate-400">Luôn sẵn sàng trợ giúp</p>
@@ -213,11 +213,10 @@ export function ChatBot() {
                   className={`flex ${message.isBot ? 'justify-start' : 'justify-end'}`}
                 >
                   <div
-                    className={`max-w-[80%] rounded-2xl px-4 py-2 ${
-                      message.isBot
+                    className={`max-w-[80%] rounded-2xl px-4 py-2 ${message.isBot
                         ? 'bg-slate-800/50 border border-cyan-500/30 text-slate-100'
                         : 'bg-gradient-to-r from-cyan-500 to-purple-600 text-white'
-                    }`}
+                      }`}
                   >
                     <p className="text-sm whitespace-pre-line">{message.text}</p>
                   </div>

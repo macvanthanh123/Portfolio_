@@ -8,38 +8,38 @@ const projects = [
     title: 'Chatbot Pháp luật Việt Nam',
     description: 'Chatbot Luật Việt Nam là một ứng dụng trí tuệ nhân tạo được xây dựng nhằm hỗ trợ người dùng tra cứu và tìm hiểu pháp luật Việt Nam thông qua hình thức hội thoại. Hệ thống sử dụng các mô hình xử lý ngôn ngữ tự nhiên (NLP) để phân tích câu hỏi, truy xuất thông tin từ các văn bản pháp luật như luật, nghị định, thông tư và đưa ra câu trả lời ngắn gọn, dễ hiểu, kèm theo căn cứ pháp lý rõ ràng. Chatbot hướng tới việc giúp cá nhân, sinh viên và doanh nghiệp tiếp cận pháp luật thuận tiện hơn, giảm thời gian tra cứu và hạn chế rủi ro hiểu sai quy định.',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop',
-    tags: ['gemini','Docker', 'OpenAI', 'React', 'FastAPI', 'PostgreSQL'],
+    tags: ['gemini', 'Docker', 'OpenAI', 'React', 'FastAPI', 'PostgreSQL'],
     metrics: [
-      { label: 'Response Time', value: '<4s' },
+      { label: 'Thời gian phản hồi', value: '<4s' },
     ],
     github: 'https://github.com/macvanthanh123/VietLawBot',
     featured: true,
   },
   {
-  title: 'Ingest Service for LLMs (không thể show code)',
-  description: 'Microservice mạnh mẽ để thu thập, phân tích và xử lý tài liệu cho hệ thống LLM: upload & lưu trữ file (MinIO), trích xuất văn bản (PDF, DOCX, HTML, OCR), phân đoạn thông minh (chunking), sinh embedding (OpenAI), lưu trữ metadata & embedding (Postgres + vector store), và cung cấp API tìm kiếm ngữ nghĩa cùng UI thử nghiệm (Streamlit). Hỗ trợ xử lý bất đồng bộ qua Redis/Bytewax để tối ưu throughput và khả năng mở rộng.',
-  image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&h=600&fit=crop',
-  tags: ['Python', 'FastAPI', 'OpenAI', 'MinIO', 'PostgreSQL', 'Redis', 'Bytewax', 'Streamlit', 'Embeddings', 'Semantic Search'],
-  metrics: [
-    { label: 'Ingestion throughput', value: 'scalable (workers/Redis)' },
-    { label: 'Avg embedding latency', value: '~150ms (model-dependent)' },
-    { label: 'Search latency', value: '<200ms (typical)' }
-  ],
-  github: "không thể show code do công ty mình làm",
-  featured: true
+    title: 'Ingest Service for LLMs (không thể show code)',
+    description: 'Microservice mạnh mẽ để thu thập, phân tích và xử lý tài liệu cho hệ thống LLM: upload & lưu trữ file (MinIO), trích xuất văn bản (PDF, DOCX, HTML, OCR), phân đoạn thông minh (chunking), sinh embedding (OpenAI), lưu trữ metadata & embedding (Postgres + vector store), và cung cấp API tìm kiếm ngữ nghĩa cùng UI thử nghiệm (Streamlit). Hỗ trợ xử lý bất đồng bộ qua Redis/Bytewax để tối ưu throughput và khả năng mở rộng.',
+    image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=800&h=600&fit=crop',
+    tags: ['Python', 'FastAPI', 'OpenAI', 'MinIO', 'PostgreSQL', 'Redis', 'Bytewax', 'Streamlit', 'Embeddings', 'Semantic Search'],
+    metrics: [
+      { label: 'Thông lượng xử lý', value: 'scalable (workers/Redis)' },
+      { label: 'Độ trễ embedding TB', value: '~150ms (tùy model)' },
+      { label: 'Độ trễ tìm kiếm', value: '<200ms (thông thường)' }
+    ],
+    github: "không thể show code do công ty mình làm",
+    featured: true
   },
   {
-  title: 'Nhận diện cử chỉ tay',
-  description: 'Hệ thống nhận diện cử chỉ tay sử dụng mô hình Deep Learning dựa trên VGG19 pretrained, được fine-tune cho bài toán phân loại 5 cử chỉ tay phổ biến. Mô hình xử lý ảnh đầu vào kích thước 224×224, áp dụng Transfer Learning và đạt độ chính xác cao trên tập kiểm tra.',
-  image: 'https://images.unsplash.com/photo-1526378722461-35c7a8c0b87a?w=800&h=600&fit=crop',
-  tags: ['Deep Learning', 'CNN', 'VGG19', 'Transfer Learning', 'Keras', 'OpenCV'],
-  metrics: [
-    { label: 'Accuracy', value: '99.27%' },
-    { label: 'Classes', value: '5 gestures' },
-    { label: 'Input Size', value: '224×224 RGB' },
-  ],
-  github: 'https://github.com/macvanthanh123/image-processing',
-  featured: true,
+    title: 'Nhận diện cử chỉ tay',
+    description: 'Hệ thống nhận diện cử chỉ tay sử dụng mô hình Deep Learning dựa trên VGG19 pretrained, được fine-tune cho bài toán phân loại 5 cử chỉ tay phổ biến. Mô hình xử lý ảnh đầu vào kích thước 224×224, áp dụng Transfer Learning và đạt độ chính xác cao trên tập kiểm tra.',
+    image: 'https://images.unsplash.com/photo-1526378722461-35c7a8c0b87a?w=800&h=600&fit=crop',
+    tags: ['Deep Learning', 'CNN', 'VGG19', 'Transfer Learning', 'Keras', 'OpenCV'],
+    metrics: [
+      { label: 'Độ chính xác', value: '99.27%' },
+      { label: 'Số lớp', value: '5 cử chỉ' },
+      { label: 'Kích thước đầu vào', value: '224×224 RGB' },
+    ],
+    github: 'https://github.com/macvanthanh123/image-processing',
+    featured: true,
   },
   {
     "title": "Phát hiện đối tượng YOLOv8 cho Tài liệu Giáo dục Tiếng Việt",
@@ -71,9 +71,9 @@ export function ProjectsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl mb-4">
-            Featured <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Projects</span>
+            Dự án <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Tiêu biểu</span>
           </h2>
-          <p className="text-slate-400 text-lg">Showcasing my best AI/ML work and real-world impact</p>
+          <p className="text-slate-400 text-lg">Trưng bày các dự án AI/ML tốt nhất và tác động thực tế của tôi</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -90,7 +90,7 @@ export function ProjectsSection() {
               {project.featured && (
                 <div className="absolute top-4 right-4 z-20 flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full text-sm">
                   <Star className="w-4 h-4 fill-current" />
-                  <span>Featured</span>
+                  <span>Tiêu biểu</span>
                 </div>
               )}
 
@@ -102,7 +102,7 @@ export function ProjectsSection() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent"></div>
-                
+
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-cyan-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
@@ -112,7 +112,7 @@ export function ProjectsSection() {
                 <h3 className="text-xl text-white mb-3 group-hover:text-cyan-400 transition-colors">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-slate-400 mb-4 line-clamp-3">
                   {project.description}
                 </p>
@@ -156,9 +156,9 @@ export function ProjectsSection() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Github className="w-4 h-4" />
-                    <span>Code</span>
+                    <span>Mã nguồn</span>
                   </motion.a>
-                  
+
                 </div>
               </div>
             </motion.div>
@@ -178,7 +178,7 @@ export function ProjectsSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span>View All Projects</span>
+            <span>Xem tất cả dự án</span>
             <ExternalLink className="w-5 h-5" />
           </motion.a>
         </motion.div>

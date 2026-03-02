@@ -4,7 +4,7 @@ import { Brain, Cloud, Code, Database, Cpu, Zap, Server, HardDrive } from 'lucid
 
 const skillCategories = [
   {
-    title: 'Core AI & ML',
+    title: 'AI & ML Cốt lõi',
     icon: Brain,
     color: 'from-cyan-500 to-blue-500',
     skills: [
@@ -17,7 +17,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'Frameworks & Libraries',
+    title: 'Framework & Thư viện',
     icon: Zap,
     color: 'from-purple-500 to-pink-500',
     skills: [
@@ -30,11 +30,11 @@ const skillCategories = [
       { name: 'NumPy' },
       { name: 'Matplotlib' },
       { name: 'Seaborn' },
-      
+
     ]
   },
   {
-    title: 'Programming',
+    title: 'Ngôn ngữ Lập trình',
     icon: Code,
     color: 'from-green-500 to-emerald-500',
     skills: [
@@ -45,7 +45,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'Backend & Model Serving',
+    title: 'Backend & Triển khai Mô hình',
     icon: Server,
     color: 'from-orange-500 to-red-500',
     skills: [
@@ -55,7 +55,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'Databases & Caching',
+    title: 'Cơ sở Dữ liệu & Caching',
     icon: Database,
     color: 'from-blue-500 to-indigo-500',
     skills: [
@@ -66,7 +66,7 @@ const skillCategories = [
     ]
   },
   {
-    title: 'Familiar With',
+    title: 'Quen thuộc với',
     icon: Cloud,
     color: 'from-yellow-500 to-orange-500',
     skills: [
@@ -94,9 +94,9 @@ export function SkillsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl mb-4">
-            Skills & <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Expertise</span>
+            Kỹ năng & <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Chuyên môn</span>
           </h2>
-          <p className="text-slate-400 text-lg">Technologies I work with to build intelligent solutions</p>
+          <p className="text-slate-400 text-lg">Các công nghệ tôi sử dụng để xây dựng các giải pháp thông minh</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

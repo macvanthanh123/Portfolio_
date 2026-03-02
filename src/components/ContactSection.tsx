@@ -38,14 +38,14 @@ export function ContactSection() {
     },
     {
       icon: Phone,
-      label: 'Phone',
+      label: 'Số điện thoại',
       value: '0867153918',
       href: '',
     },
     {
       icon: MapPin,
-      label: 'Location',
-      value: 'Mễ trì,Hà Nội',
+      label: 'Địa điểm',
+      value: 'Mễ trì, Hà Nội',
       href: 'https://www.google.com/search?q=m%E1%BB%85+tr%C3%AC&oq=m%E1%BB%85+tr%C3%AC&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEC4YgAQyDQgEEC4YrwEYxwEYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxOTc1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8',
     },
   ];
@@ -69,9 +69,9 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl mb-4">
-            Let's <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Connect</span>
+            Hãy <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Kết nối</span>
           </h2>
-          <p className="text-slate-400 text-lg">Have a project in mind? Let's build something amazing together</p>
+          <p className="text-slate-400 text-lg">Bạn có ý tưởng dự án? Hãy cùng nhau xây dựng điều gì đó tuyệt vời</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -83,10 +83,10 @@ export function ContactSection() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl text-white mb-4">Get in Touch</h3>
+              <h3 className="text-2xl text-white mb-4">Liên hệ</h3>
               <p className="text-slate-400 mb-8">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-                Feel free to reach out through any of the following channels.
+                Tôi luôn sẵn sàng thảo luận về các dự án mới, ý tưởng sáng tạo hoặc cơ hội hợp tác để cùng thực hiện tầm nhìn của bạn.
+                Đừng ngần ngại liên hệ qua bất kỳ kênh nào dưới đây.
               </p>
             </div>
 
@@ -115,7 +115,7 @@ export function ContactSection() {
 
             {/* Social Links */}
             <div>
-              <h4 className="text-lg text-white mb-4">Follow Me</h4>
+              <h4 className="text-lg text-white mb-4">Theo dõi tôi</h4>
               <div className="flex gap-4">
                 {socialLinks.map((social, idx) => (
                   <motion.a
@@ -145,7 +145,7 @@ export function ContactSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </div>
-              <span className="text-green-400">Available for freelance opportunities</span>
+              <span className="text-green-400">Sẵn sàng cho các cơ hội hợp tác</span>
             </motion.div>
           </motion.div>
 
@@ -163,7 +163,7 @@ export function ContactSection() {
               <form onSubmit={handleSubmit} className="relative space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm text-slate-400 mb-2">
-                    Your Name
+                    Họ và tên
                   </label>
                   <input
                     type="text"
@@ -173,13 +173,13 @@ export function ContactSection() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-lg focus:border-cyan-500/50 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 text-white placeholder-slate-500 transition-all"
-                    placeholder="John Doe"
+                    placeholder="Nguyễn Văn A"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm text-slate-400 mb-2">
-                    Email Address
+                    Địa chỉ Email
                   </label>
                   <input
                     type="email"
@@ -189,13 +189,13 @@ export function ContactSection() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-lg focus:border-cyan-500/50 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 text-white placeholder-slate-500 transition-all"
-                    placeholder="john@example.com"
+                    placeholder="nva@example.com"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-sm text-slate-400 mb-2">
-                    Subject
+                    Tiêu đề
                   </label>
                   <input
                     type="text"
@@ -205,13 +205,13 @@ export function ContactSection() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-lg focus:border-cyan-500/50 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 text-white placeholder-slate-500 transition-all"
-                    placeholder="Project Inquiry"
+                    placeholder="Yêu cầu dự án"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm text-slate-400 mb-2">
-                    Message
+                    Tin nhắn
                   </label>
                   <textarea
                     id="message"
@@ -221,7 +221,7 @@ export function ContactSection() {
                     required
                     rows={5}
                     className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700/50 rounded-lg focus:border-cyan-500/50 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 text-white placeholder-slate-500 resize-none transition-all"
-                    placeholder="Tell me about your project..."
+                    placeholder="Hãy kể cho tôi nghe về dự án của bạn..."
                   />
                 </div>
 
@@ -231,7 +231,7 @@ export function ContactSection() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <span>Send Message</span>
+                  <span>Gửi tin nhắn</span>
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.button>
               </form>

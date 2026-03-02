@@ -3,12 +3,12 @@ import { motion } from 'motion/react';
 import { Menu, X, Sparkles } from 'lucide-react';
 
 const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Trang chủ', href: '#home' },
+  { label: 'Giới thiệu', href: '#about' },
+  { label: 'Kỹ năng', href: '#skills' },
+  { label: 'Kinh nghiệm', href: '#experience' },
+  { label: 'Dự án', href: '#projects' },
+  { label: 'Liên hệ', href: '#contact' },
 ];
 
 export function Navigation() {
@@ -27,9 +27,8 @@ export function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 shadow-lg' : ''
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 shadow-lg' : ''
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -60,7 +59,7 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Let's Talk
+              Liên hệ ngay
             </motion.a>
           </div>
 

@@ -20,18 +20,18 @@ export default function App() {
     <div className="relative bg-slate-950 text-white overflow-hidden">
       {/* Spline 3D Background - Full Page */}
       <div className="fixed inset-0 z-0">
-        <SplineViewer 
+        <SplineViewer
           sceneUrl="https://prod.spline.design/XZAsVt2CuWd7dyBL/scene.splinecode"
           className="w-full h-full"
         />
       </div>
-      
+
       {/* Animated Particle Background */}
       <ParticleBackground />
-      
+
       {/* Navigation */}
       <Navigation />
-      
+
       {/* Main Content */}
       <main className="relative z-10">
         <HeroSection />
@@ -41,18 +41,18 @@ export default function App() {
         <ProjectsSection />
         <ContactSection />
       </main>
-      
+
       {/* AI ChatBot */}
       <ChatBot />
-      
+
       {/* Footer */}
       <footer className="relative z-10 border-t border-slate-800/50 bg-slate-950/80 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-6 py-8 text-center">
           <p className="text-slate-400">
-            © 2024 AI Engineer Portfolio. Built with React, Tailwind CSS & Motion.
+            © 2024 Hồ sơ Kỹ sư AI. Xây dựng bằng React, Tailwind CSS & Motion.
           </p>
           <p className="text-slate-500 text-sm mt-2">
-            Designed with passion for AI & Machine Learning
+            Thiết kế với niềm đam mê cho AI & Machine Learning
           </p>
         </div>
       </footer>

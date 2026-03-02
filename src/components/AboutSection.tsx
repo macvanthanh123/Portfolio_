@@ -6,23 +6,23 @@ import { Award, BookOpen, Briefcase, Code2, GraduationCap, Target } from 'lucide
 const highlights = [
   {
     icon: Briefcase,
-    label: '6 Month',
-    description: 'Professional Experience'
+    label: '6 Tháng',
+    description: 'Kinh nghiệm chuyên môn'
   },
   {
     icon: Code2,
-    label: '5+ Projects',
-    description: 'Successfully Delivered'
+    label: '5+ Dự án',
+    description: 'Đã hoàn thành'
   },
   {
     icon: Award,
-    label: '5+ Certifications',
-    description: 'AI/ML Expertise'
+    label: '5+ Chứng chỉ',
+    description: 'Chuyên môn AI/ML'
   },
   {
     icon: GraduationCap,
     label: 'DS&AI',
-    description: 'Phenikaa University'
+    description: 'Đại học Phenikaa'
   }
 ];
 
@@ -42,9 +42,9 @@ export function AboutSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl mb-4">
-            About <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Me</span>
+            Về <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Tôi</span>
           </h2>
-          <p className="text-slate-400 text-lg">Get to know more about my journey in AI</p>
+          <p className="text-slate-400 text-lg">Tìm hiểu thêm về hành trình của tôi trong lĩnh vực AI</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -58,12 +58,12 @@ export function AboutSection() {
             <div className="relative rounded-2xl overflow-hidden border-2 border-slate-800 shadow-2xl">
               <ImageWithFallback
                 src="src\components\image\Screenshot.png"
-                alt="Profile"
+                alt="Ảnh chân dung"
                 className="w-full aspect-square object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
             </div>
-            
+
             {/* Floating Badge */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
@@ -129,7 +129,7 @@ export function AboutSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Hire Me
+                Tuyển dụng tôi
               </motion.a>
               <motion.a
                 href="#"
@@ -138,7 +138,7 @@ export function AboutSection() {
                 whileTap={{ scale: 0.95 }}
               >
                 <BookOpen className="w-5 h-5" />
-                Download CV
+                Tải CV
               </motion.a>
             </div>
           </motion.div>

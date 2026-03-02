@@ -32,7 +32,6 @@ const experiences = [
       'Tạo embedding cho văn bản bằng Hugging Face / OpenAI embedding models và lưu trữ vector trong cơ sở dữ liệu vector (FAISS / Qdrant).',
       'Quản lý metadata của tài liệu và chunk (nguồn dữ liệu, document ID, versioning) bằng cơ sở dữ liệu quan hệ / NoSQL.',
       'Phát triển RESTful API với FastAPI để hỗ trợ ingest file, ingest text và đồng bộ dataset với Dify Dataset APIs.',
-      'Tối ưu luồng ingest cho xử lý theo batch, giảm lỗi ingest lại và trùng lặp dữ liệu.',
       'Đóng gói dịch vụ bằng Docker và áp dụng các thực hành CI/CD cơ bản trong quá trình phát triển và kiểm thử.',
       'Phối hợp với các thành viên trong nhóm để tích hợp ingest service vào chatbot và các hệ thống AI nội bộ.',
     ],
@@ -57,9 +56,9 @@ export function ExperienceSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl mb-4">
-            Work <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Experience</span>
+            Kinh nghiệm <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">Làm việc</span>
           </h2>
-          <p className="text-slate-400 text-lg">My professional journey in tech</p>
+          <p className="text-slate-400 text-lg">Hành trình sự nghiệp của tôi trong lĩnh vực công nghệ</p>
         </motion.div>
 
         <div className="relative">
@@ -92,7 +91,7 @@ export function ExperienceSection() {
                   <div className="relative mb-6">
                     <div className="flex items-start justify-between flex-wrap gap-4 mb-3">
                       <div className="flex-1">
-                        <a 
+                        <a
                           href={exp.website}
                           target="_blank"
                           rel="noopener noreferrer"

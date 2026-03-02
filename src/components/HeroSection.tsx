@@ -19,7 +19,7 @@ export function HeroSection() {
       gradient: "from-cyan-400 via-blue-500 to-purple-600",
     },
     {
-      content: "AI Engineer & ML Enthusiast",
+      content: "Kỹ sư AI & Đam mê Machine Learning",
       gradient: "from-cyan-400 via-blue-500 to-purple-600",
     },
   ];
@@ -165,7 +165,7 @@ export function HeroSection() {
             { icon: Github, href: "https://github.com/macvanthanh123", label: "GitHub" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/thanh-m%E1%BA%A1c-825a93319/", label: "LinkedIn" },
             { icon: Mail, href: "#contact", label: "Email" },
-            { icon: FileText, href: "#", label: "Resume" },
+            { icon: FileText, href: "#", label: "Hồ sơ" },
           ].map((social, index) => (
             <motion.a
               key={index}
